@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: realdevopsguypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: realdevopsguypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: realdevopsguypipelinesjavascriptdocker 
+          image: vantageacreastus2.azurecr.io/realdevopsguypipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
